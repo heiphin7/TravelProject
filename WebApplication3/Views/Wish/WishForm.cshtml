@@ -1,0 +1,9 @@
+﻿<!-- Views/Wish/WishForm.cshtml -->
+@model WebApplication3.Models.WishForm
+
+<form method="post" action="/Wish/SubmitWishForm">
+    <input type="text" asp-for="Name" placeholder="Name"><br>
+    <input type="text" asp-for="Subject" placeholder="Subject"><br>
+    <textarea asp-for="Message" placeholder="Message"></textarea><br>
+    <button type="submit">Submit</button>
+</form>

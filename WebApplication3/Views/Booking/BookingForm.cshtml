@@ -1,0 +1,12 @@
+﻿<!-- Views/Booking/BookingForm.cshtml -->
+@model WebApplication3.Models.BookingForm
+
+<form method="post" action="/Booking/SubmitBookingForm">
+    <input type="text" asp-for="Name" placeholder="Name"><br>
+    <input type="email" asp-for="Email" placeholder="Email"><br>
+    <input type="text" asp-for="Phone" placeholder="Phone"><br>
+    <input type="date" asp-for="DepartureDate"><br>
+    <input type="date" asp-for="ReturnDate"><br>
+    <textarea asp-for="Message" placeholder="Message"></textarea><br>
+    <button type="submit">Submit</button>
+</form>
